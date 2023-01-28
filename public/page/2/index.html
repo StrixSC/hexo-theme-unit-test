@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="html dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </meta>
+    
+        <title>
+            Hexo
+        </title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+        <link rel="manifest" href="/assets/site.webmanifest">
+        <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="A Blog Powered By Hexo">
+        <meta name="viewport" , content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css">
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source Code Pro'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!-- 
+<link rel="stylesheet" href="/css/hamburger.css">
+ -->
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+            rel="stylesheet">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee Hairline'>
+        
+<link rel="stylesheet" href="/css/leviathan.min.css">
+
+            
+<script src="/js/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="bg-gray-200 dark:bg-black">
+    <div class="flex flex-col min-h-screen gap-12 px-4 py-8 layout">
+        <nav class="nav-wrapper">
+            <div class="flex items-center justify-around">
+    <div class="flex items-center justify-center menu">
+        <div class="tham tham-e-slider tham-w-6">
+            <div class="tham-box">
+                <div class="bg-black dark:bg-white tham-inner">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-center gap-8 text-xl font-bungeehairline">
+            
+            
+                <div class="flex items-center justify-center">
+                    <a href="/"><img class="w-24" src="/assets/logo.png"></a>
+                </div>
+                
+                    <div class="hidden text-3xl font-bold text-center text-black dark:text-white lg:block">
+                        Hexo
+                            
+                    </div>
+                    
+        </div>
+        <div class="flex items-center justify-center">
+    <button class="theme-switcher" type="button">
+        <span class="text-black dark:text-white theme-switcher-icon material-symbols-outlined">
+        </span>
+    </button>
+</div>
+<script>
+    const darkMode = "dark_mode";
+    const lightMode = "light_mode";
+
+        let isDark;
+        const localStorageVal = window.localStorage.getItem("isDark");
+        if (localStorageVal) {
+            isDark = localStorageVal === "true" ? true : false;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            isDark = true;
+            window.localStorage.setItem("isDark", isDark);
+        }
+
+        $(".theme-switcher-icon").text(isDark ? lightMode : darkMode);
+        if (isDark) {
+            $(".html").addClass("dark");
+        } else {
+            $(".html").removeClass("dark");
+        }
+
+    $(".theme-switcher").on('click', () => {
+        isDark = !isDark;
+        $(".theme-switcher-icon").text(isDark ? lightMode : darkMode);
+        $(".html").toggleClass("dark");
+        window.localStorage.setItem("isDark", isDark);
+    });
+</script>
+</div>
+        </nav>
+        <div class="hidden sidebar">
+            <div class="flex justify-center px-4">
+    <div class="flex flex-col w-full gap-6 lg:w-3/4 ">
+        
+            <a href="/"
+                class="pb-2 text-3xl font-bold text-black no-underline border-b-2 dark:text-white hover:border-neutral-800 border-neutral-400 dark:border-neutral-400 dark:hover:border-white hover:cursor-pointer">
+                Home
+            </a>
+            
+            <a href="/archives"
+                class="pb-2 text-3xl font-bold text-black no-underline border-b-2 dark:text-white hover:border-neutral-800 border-neutral-400 dark:border-neutral-400 dark:hover:border-white hover:cursor-pointer">
+                Archive
+            </a>
+            
+        </div>
+</div>
+        </div>
+        <script>
+            let open = false;
+            $('.menu').click((e) => {
+                open = !open;
+                console.log(open);
+                $('.tham').toggleClass('tham-active');
+                $('.sidebar').toggleClass('hidden');
+                $('.main-content-body').toggleClass('hidden');
+                $('.footer-wrapper').toggleClass('hidden');
+            });
+        </script>
+        <container class="main-content-body">
+            <div class="w-full p-8 mx-auto text-white dark:text-white lg:p-0 lg:w-1/2">
+       <div class="flex flex-col gap-6">
+              
+                     <div class="pb-2 border-b-2 border-1 border-neutral-300 dark:border-neutral-900">
+
+                            <div class="text-2xl font-bold text-black dark:text-white">中文測試</div>
+                            <div class="flex gap-2 text-lg font-light text-neutral-600">
+                                   <div> December 24, 2013</div>
+                                   
+                            </div>
+                            <div class="mt-4 text-lg font-normal text-justify text-black dark:text-white">
+                                   
+                            </div>
+                            <div class="my-4 text-lg font-normal">
+                                   <a class="text-black underline hover:text-blue-600 dark:text-white" href="/2013/12/24/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/">Read</a>
+                            </div>
+                     </div>
+                     
+                     <div class="pb-2 border-b-2 border-1 border-neutral-300 dark:border-neutral-900">
+
+                            <div class="text-2xl font-bold text-black dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</div>
+                            <div class="flex gap-2 text-lg font-light text-neutral-600">
+                                   <div> December 24, 2013</div>
+                                   
+                            </div>
+                            <div class="mt-4 text-lg font-normal text-justify text-black dark:text-white">
+                                   
+                            </div>
+                            <div class="my-4 text-lg font-normal">
+                                   <a class="text-black underline hover:text-blue-600 dark:text-white" href="/2013/12/24/long-title/">Read</a>
+                            </div>
+                     </div>
+                     
+                     <div class="pb-2 border-b-2 border-1 border-neutral-300 dark:border-neutral-900">
+
+                            <div class="text-2xl font-bold text-black dark:text-white">Categories</div>
+                            <div class="flex gap-2 text-lg font-light text-neutral-600">
+                                   <div> December 24, 2013</div>
+                                   
+                            </div>
+                            <div class="mt-4 text-lg font-normal text-justify text-black dark:text-white">
+                                   
+                            </div>
+                            <div class="my-4 text-lg font-normal">
+                                   <a class="text-black underline hover:text-blue-600 dark:text-white" href="/2013/12/24/categories/">Read</a>
+                            </div>
+                     </div>
+                     
+                     <div class="pb-2 border-b-2 border-1 border-neutral-300 dark:border-neutral-900">
+
+                            <div class="text-2xl font-bold text-black dark:text-white">Link Post</div>
+                            <div class="flex gap-2 text-lg font-light text-neutral-600">
+                                   <div> December 24, 2013</div>
+                                   
+                            </div>
+                            <div class="mt-4 text-lg font-normal text-justify text-black dark:text-white">
+                                   
+                            </div>
+                            <div class="my-4 text-lg font-normal">
+                                   <a class="text-black underline hover:text-blue-600 dark:text-white" href="/2013/12/24/link-post/">Read</a>
+                            </div>
+                     </div>
+                     
+                     <div class="pb-2 border-b-2 border-1 border-neutral-300 dark:border-neutral-900">
+
+                            <div class="text-2xl font-bold text-black dark:text-white">Tags</div>
+                            <div class="flex gap-2 text-lg font-light text-neutral-600">
+                                   <div> December 24, 2013</div>
+                                   
+                            </div>
+                            <div class="mt-4 text-lg font-normal text-justify text-black dark:text-white">
+                                   
+                            </div>
+                            <div class="my-4 text-lg font-normal">
+                                   <a class="text-black underline hover:text-blue-600 dark:text-white" href="/2013/12/24/tags/">Read</a>
+                            </div>
+                     </div>
+                     
+                     <div class="pb-2 border-b-2 border-1 border-neutral-300 dark:border-neutral-900">
+
+                            <div class="text-2xl font-bold text-black dark:text-white">Elements</div>
+                            <div class="flex gap-2 text-lg font-light text-neutral-600">
+                                   <div> December 24, 2013</div>
+                                   
+                            </div>
+                            <div class="mt-4 text-lg font-normal text-justify text-black dark:text-white">
+                                   
+                            </div>
+                            <div class="my-4 text-lg font-normal">
+                                   <a class="text-black underline hover:text-blue-600 dark:text-white" href="/2013/12/24/elements/">Read</a>
+                            </div>
+                     </div>
+                     
+                     <div class="pb-2 border-b-2 border-1 border-neutral-300 dark:border-neutral-900">
+
+                            <div class="text-2xl font-bold text-black dark:text-white">Hello World</div>
+                            <div class="flex gap-2 text-lg font-light text-neutral-600">
+                                   <div> December 24, 2013</div>
+                                   
+                            </div>
+                            <div class="mt-4 text-lg font-normal text-justify text-black dark:text-white">
+                                   
+                            </div>
+                            <div class="my-4 text-lg font-normal">
+                                   <a class="text-black underline hover:text-blue-600 dark:text-white" href="/2013/12/24/hello-world/">Read</a>
+                            </div>
+                     </div>
+                     
+       </div>
+</div>
+        </container>
+        <footer class="mt-auto footer-wrapper ">
+            <footer class="mx-8 text-xl font-bold text-center text-black dark:text-white dark:font-normal font-bungeehairline">
+    <div class="copyright">
+        &copy; 2023 | Powered by <a class="text-black dark:text-white" href="https://hexo.io"
+                target="_blank"><b>Hexo</b></a>
+    </div>
+<div>Theme LEVIATHAN by <a class="text-black dark:text-white" target="_blank" rel="noopener" href="https://github.com/StrixSC"><b>StrixSC</b></a></div>
+
+   <br>
+
+<div class="flex flex-wrap justify-center gap-4 align-middle">
+    <div class="hoverable-element">
+        <a target="_blank" rel="noopener" href="https://mastodon.social/explore"><img height="32" width="32" src="https://cdn.simpleicons.org/mastodon/" /></a>
+    </div>
+    <div class="hoverable-element">
+        <a target="_blank" rel="noopener" href="https://linkedin.com"><img height="32" width="32" src="https://cdn.simpleicons.org/linkedin/" /></a>
+    </div>
+    <!-- <div class="right-navbar-container navbar-container "> -->
+    <div class="hoverable-element">
+        <a target="_blank" rel="noopener" href="https://twitter.com/S7RIX"><img height="32" width="32" src="https://cdn.simpleicons.org/twitter/" /></a>
+    </div>
+    <div class="hoverable-element">
+        <a target="_blank" rel="noopener" href="https://github.com/StrixSC/"><img height="32" width="32" src="https://cdn.simpleicons.org/github/" /></a>
+    </div>
+   </div>
+
+</footer>
+
+
+<script src="/js/main.js"></script>
+
+            
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        </footer>
+    </div>
+</body>
+
+</html>

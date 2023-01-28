@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="html dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </meta>
+    
+        <title>
+            Hexo
+        </title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+        <link rel="manifest" href="/assets/site.webmanifest">
+        <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="A Blog Powered By Hexo">
+        <meta name="viewport" , content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css">
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source Code Pro'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!-- 
+<link rel="stylesheet" href="/css/hamburger.css">
+ -->
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+            rel="stylesheet">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee Hairline'>
+        
+<link rel="stylesheet" href="/css/leviathan.min.css">
+
+            
+<script src="/js/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="bg-gray-200 dark:bg-black">
+    <div class="flex flex-col min-h-screen gap-12 px-4 py-8 layout">
+        <nav class="nav-wrapper">
+            <div class="flex items-center justify-around">
+    <div class="flex items-center justify-center menu">
+        <div class="tham tham-e-slider tham-w-6">
+            <div class="tham-box">
+                <div class="bg-black dark:bg-white tham-inner">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-center gap-8 text-xl font-bungeehairline">
+            
+                        <div
+                            class="flex flex-wrap justify-center gap-4 text-black no-underline align-middle dark:text-white font-bungeehairline">
+                            
+                                
+                                    <div class="flex justify-center align-middle">
+                                        <a href="/"><img class="w-16" src="/assets/logo.png" alt="logo"></a>
+                                    </div>
+                                    
+                        </div>
+                        
+        </div>
+        <div class="flex items-center justify-center">
+    <button class="theme-switcher" type="button">
+        <span class="text-black dark:text-white theme-switcher-icon material-symbols-outlined">
+        </span>
+    </button>
+</div>
+<script>
+    const darkMode = "dark_mode";
+    const lightMode = "light_mode";
+
+        let isDark;
+        const localStorageVal = window.localStorage.getItem("isDark");
+        if (localStorageVal) {
+            isDark = localStorageVal === "true" ? true : false;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            isDark = true;
+            window.localStorage.setItem("isDark", isDark);
+        }
+
+        $(".theme-switcher-icon").text(isDark ? lightMode : darkMode);
+        if (isDark) {
+            $(".html").addClass("dark");
+        } else {
+            $(".html").removeClass("dark");
+        }
+
+    $(".theme-switcher").on('click', () => {
+        isDark = !isDark;
+        $(".theme-switcher-icon").text(isDark ? lightMode : darkMode);
+        $(".html").toggleClass("dark");
+        window.localStorage.setItem("isDark", isDark);
+    });
+</script>
+</div>
+        </nav>
+        <div class="hidden sidebar">
+            <div class="flex justify-center px-4">
+    <div class="flex flex-col w-full gap-6 lg:w-3/4 ">
+        
+            <a href="/"
+                class="pb-2 text-3xl font-bold text-black no-underline border-b-2 dark:text-white hover:border-neutral-800 border-neutral-400 dark:border-neutral-400 dark:hover:border-white hover:cursor-pointer">
+                Home
+            </a>
+            
+            <a href="/archives"
+                class="pb-2 text-3xl font-bold text-black no-underline border-b-2 dark:text-white hover:border-neutral-800 border-neutral-400 dark:border-neutral-400 dark:hover:border-white hover:cursor-pointer">
+                Archive
+            </a>
+            
+        </div>
+</div>
+        </div>
+        <script>
+            let open = false;
+            $('.menu').click((e) => {
+                open = !open;
+                console.log(open);
+                $('.tham').toggleClass('tham-active');
+                $('.sidebar').toggleClass('hidden');
+                $('.main-content-body').toggleClass('hidden');
+                $('.footer-wrapper').toggleClass('hidden');
+            });
+        </script>
+        <container class="main-content-body">
+            <div class="flex flex-col justify-center gap-4 px-4">
+    <article
+        class="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mt-4 mb-16 prose content dark:prose-invert ">
+        <h1 class="mb-4 text-5xl font-bold tracking-tight text-black lg:text-7xl dark:text-white">
+            中文測試
+        </h1>
+        <div class="flex justify-between w-full">
+            <p class="block ml-2 text-sm text-gray-700 dark:text-gray-300">
+                 December 24, 2013
+            </p>
+            <p class="block ml-2 text-sm text-gray-700 dark:text-gray-300">
+                
+            </p>
+        </div>
+        <p>This is a Chinese test post.</p>
+<p>善我王上魚、產生資西員合兒臉趣論。畫衣生這著爸毛親可時，安程幾？合學作。觀經而作建。都非子作這！法如言子你關！手師也。</p>
+<p>以也座論頭室業放。要車時地變此親不老高小是統習直麼調未，行年香一？</p>
+<p>就竟在，是我童示讓利分和異種百路關母信過明驗有個歷洋中前合著區亮風值新底車有正結，進快保的行戰從：弟除文辦條國備當來際年每小腳識世可的的外的廣下歌洲保輪市果底天影；全氣具些回童但倒影發狀在示，數上學大法很，如要我……月品大供這起服滿老？應學傳者國：山式排只不之然清同關；細車是！停屋常間又，資畫領生，相們制在？公別的人寫教資夠。資再我我！只臉夫藝量不路政吃息緊回力之；兒足灣電空時局我怎初安。意今一子區首者微陸現際安除發連由子由而走學體區園我車當會，經時取頭，嚴了新科同？很夫營動通打，出和導一樂，查旅他。坐是收外子發物北看蘭戰坐車身做可來。道就學務。</p>
+<p>國新故。</p>
+<blockquote>
+<p>工步他始能詩的，裝進分星海演意學值例道……於財型目古香亮自和這乎？化經溫詩。只賽嚴大一主價世哥受的沒有中年即病行金拉麼河。主小路了種就小為廣不？</p>
+</blockquote>
+<p><em>From <a target="_blank" rel="noopener" href="http://www.richyli.com/tool/loremipsum/">亂數假文產生器 - Chinese Lorem Ipsum</a></em></p>
+
+</div>
+        </container>
+        <footer class="mt-auto footer-wrapper ">
+            <footer class="mx-8 text-xl font-bold text-center text-black dark:text-white dark:font-normal font-bungeehairline">
+    <div class="copyright">
+        &copy; 2023 | Powered by <a class="text-black dark:text-white" href="https://hexo.io"
+                target="_blank"><b>Hexo</b></a>
+    </div>
+<div>Theme LEVIATHAN by <a class="text-black dark:text-white" target="_blank" rel="noopener" href="https://github.com/StrixSC"><b>StrixSC</b></a></div>
+
+   <br>
+
+<div class="flex flex-wrap justify-center gap-4 align-middle">
+    <div class="hoverable-element">
+        <a target="_blank" rel="noopener" href="https://mastodon.social/explore"><img height="32" width="32" src="https://cdn.simpleicons.org/mastodon/" /></a>
+    </div>
+    <div class="hoverable-element">
+        <a target="_blank" rel="noopener" href="https://linkedin.com"><img height="32" width="32" src="https://cdn.simpleicons.org/linkedin/" /></a>
+    </div>
+    <!-- <div class="right-navbar-container navbar-container "> -->
+    <div class="hoverable-element">
+        <a target="_blank" rel="noopener" href="https://twitter.com/S7RIX"><img height="32" width="32" src="https://cdn.simpleicons.org/twitter/" /></a>
+    </div>
+    <div class="hoverable-element">
+        <a target="_blank" rel="noopener" href="https://github.com/StrixSC/"><img height="32" width="32" src="https://cdn.simpleicons.org/github/" /></a>
+    </div>
+   </div>
+
+</footer>
+
+
+<script src="/js/main.js"></script>
+
+            
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        </footer>
+    </div>
+</body>
+
+</html>
